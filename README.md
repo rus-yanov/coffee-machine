@@ -21,3 +21,6 @@
  - БД PostgresSQL (можно другую с обоснованием)
  - Применить FlyWay
  - Для тестирования API подключить SwaggerUI
+
+### Диаграмма классов проекта:
+![ClassDiagram.drawio.png](ClassDiagram.drawio.png)
