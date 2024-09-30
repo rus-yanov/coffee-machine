@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: coffee-machine
+    version: @project.version@
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/machine
+    username: machine
+    password: machine
+
+  jpa:
+    properties:
+      hibernate.default_schema: public
+  flyway:
+    default-schema: public
+    schemas: public
+
+springdoc:
+  api-docs:
+    path: /api-docs
+
+server:
+  port: 8080
+  error:
+    include-message: always
+
+timeSheets:
+  cron: 0 0 6 * * ?   # ?????? ???? ? 06:00 ????
+
